@@ -14,3 +14,7 @@ p array
 array.push(3)
 
 p array
+
+# Question 6
+
+p array.uniq
