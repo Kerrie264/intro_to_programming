@@ -11,3 +11,12 @@ h[:e] = 5
 p h
 #3.
 p h.delete_if {|k,v| v < 3.5}
+
+
+
+# Question 10
+# hash values as arrays
+hash = {name: ['bob', 'joe', 'susan']}
+
+# array of hashes
+arr = [{name: 'bob'}, {name: 'joe'}, {name: 'susan'}]
