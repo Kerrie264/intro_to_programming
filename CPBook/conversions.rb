@@ -31,3 +31,8 @@ middle = gets.chomp
 puts 'What is your last name, please? '
 last = gets.chomp
 puts 'Hello, ' + first + ' ' + middle + ' ' + last + ' ' +  'how are you?'
+
+puts 'What\'s your favorite number?'
+ans = gets.chomp.to_i
+ans = ans + 1
+puts 'I think ' + ans.to_s + ' is a much bigger and better number!'
