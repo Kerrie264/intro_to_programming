@@ -36,3 +36,16 @@ puts 'What\'s your favorite number?'
 ans = gets.chomp.to_i
 ans = ans + 1
 puts 'I think ' + ans.to_s + ' is a much bigger and better number!'
+
+puts 'What is your full name?'
+name = gets.chomp
+puts 'Did you know there are ' + name.length.to_s + ' characters'
+puts 'in your name, ' + name + '?'
+
+letters = 'aAbBcCdDeE'
+puts letters.upcase
+puts letters.downcase
+puts letters.swapcase
+puts letters.capitalize
+puts 'a'.capitalize
+puts letters
