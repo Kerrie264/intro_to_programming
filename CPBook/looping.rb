@@ -97,19 +97,37 @@
 # puts 'No more Bottles of Beer on the wall, no more Bottles of Beer'
 # puts 'Go to the store, and buy some more, 99 Bottles of Beer on the wall'
 
-# Deaf Grandma
-loop do
-  talk = gets.chomp
-  if talk != ''
+# # Deaf Grandma
+# count = 0
+# loop do
+#   talk = gets.chomp
+#   if talk != ''
+#     if talk == 'BYE'
+#       count += 1
+#       if count == 3
+#         break
+#       end
+#     else
+#       count = 0
+#     end
+#     if talk == talk.upcase 
 
-    if talk == 'BYE'
-      break
-    end
-    if talk == talk.upcase 
+#       puts "NO, NOT SINCE  #{1930 + rand(20)}!"
+#     else
+#       puts 'HUH?! SPEAK UP, SONNY!'
+#     end
+#   end
+# end
 
-      puts "NO, NOT SINCE  #{1930 + rand(20)}!"
-    else
-      puts 'HUH?! SPEAK UP, SONNY!'
-    end
-  end
+# Leap years
+puts 'Please enter a start year'
+start = gets.chomp.to_i
+puts 'Please enter an end year'
+ending = gets.chomp.to_i
+puts 'The Leap Years are...'
+years = (start..ending).to_a
+years.each do |year|
+  if (year % 4 == 0) && !(year % 100 == 0) || (year % 400 == 0)
+    puts year
+  end 
 end
